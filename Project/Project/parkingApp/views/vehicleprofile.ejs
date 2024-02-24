@@ -1,0 +1,24 @@
+<html>
+    <head>See the post</head>
+    
+    <body>
+        Vehicle Id: <%= id%>  <br>
+        Vehicle regNum: <%= regNum%> <br>
+        Vehicle typeId: <%= typeId%> <br>
+        
+        <h2>Vehicle Image:</h2> 
+        <% if(image==null){%>
+        <img src="/images/hawaiian.jpg">
+        <%}else{%>
+            <img alt="embadded image" src="data:image/png;base64,<%=image%>">
+            <%}%>
+
+
+
+
+    </body>
+
+
+
+
+</html>

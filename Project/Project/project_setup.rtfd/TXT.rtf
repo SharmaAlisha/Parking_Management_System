@@ -1,0 +1,226 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf100
+{\fonttbl\f0\fnil\fcharset0 Menlo-Italic;\f1\fnil\fcharset0 Menlo-Regular;\f2\fswiss\fcharset0 Helvetica;
+\f3\fnil\fcharset0 Menlo-Bold;\f4\fnil\fcharset0 Menlo-BoldItalic;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue10;\red255\green250\blue131;\red255\green249\blue89;
+\red0\green0\blue0;\red140\green211\blue254;\red24\green24\blue24;\red193\green193\blue193;\red194\green126\blue101;
+\red255\green255\blue51;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c99942\c98555\c0;\cssrgb\c100000\c97501\c58325;\cssrgb\c100000\c96976\c42052;
+\csgray\c0;\cssrgb\c61176\c86275\c99608;\cssrgb\c12157\c12157\c12157;\cssrgb\c80000\c80000\c80000;\cssrgb\c80784\c56863\c47059;
+\cssrgb\c99946\c98636\c25320;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25400\viewh14580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i\fs24 \cf0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+
+\f1\i0 At the location of package.json run the command  \cb2 npm install\cb1 \
+\
+install the sequelize ORM :\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+install the sequelize ORM to by-pass the boiler plate code.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb3 npm install sequelize\cb1 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb4 npm install -g sequelize-cli\cb1 \
+\
+\cb4 sequelize init \cb1                It will create config.js (that holds DB details) and folderes for models, DB migration files and seeders.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf5 \CocoaLigature0 \
+ashvinis-MacBook-Pro:bloggerApp ashvinisharma$ 
+\fs24 \cf5 \cb4 sequelize init
+\fs22 \cf5 \cb1 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \ul \ulc5 Sequelize CLI [Node: 20.2.0, CLI: 6.6.1, ORM: 6.32.1]\ulnone \
+\
+Created "config/config.json"\
+Successfully created models folder at "/Volumes/SoftwareHive/Training/J2EE/NodeJS/bloggerApp/models".\
+Successfully created migrations folder at "/Volumes/SoftwareHive/Training/J2EE/NodeJS/bloggerApp/migrations".\
+Successfully created seeders folder at "/Volumes/SoftwareHive/Training/J2EE/NodeJS/bloggerApp/seeders".\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \CocoaLigature1 \
+\
+Now, update the created sequelize config.js configuration file with your DB schema details..  \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf6 \cb7 \expnd0\expndtw0\kerning0
+"development"\cf8 : \{\cb1 \
+\cb7     \cf6 "username"\cf8 : \cf9 "ashvini"\cf8 ,\cb1 \
+\cb7     \cf6 "password"\cf8 : \cf9 "root"\cf8 ,\cb1 \
+\cb7     \cf6 "database"\cf8 : \cf9 \'93parkeaze\'94\cf8 ,\cb1 \
+\cb7     \cf6 "host"\cf8 : \cf9 "127.0.0.1"\cf8 ,\cb1 \
+\cb7     \cf6 "dialect"\cf8 : \cf9 "mysql"\cf8 \cb1 \
+\cb7   \}\cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+\
+Now, create models and migrations js files corresponding to tables planned ->\
+\
+Remove the models and migrations folder from the project and save it at some location. \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf0 {{\NeXTGraphic Pasted Graphic.png \width8490 \height10190 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \CocoaLigature0 \
+\cb2 sequelize model:generate\cb1   command will generate new model and migration files.  
+\fs22 \
+\
+sequelize model:generate --name User --attributes code:string,password:string,type:string,name:string,isActive:boolean,image:text,token:string,expiresAt:date;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+sequelize model:generate --name Vehicle --attributes typeId:integer,regNum:string,image:text;\
+sequelize model:generate --name Slot --attributes number:integer,typeId:integer,isActive:boolean,isFree:boolean;\
+sequelize model:generate --name Type --attributes name:string,chargeRate:integer;\
+sequelize model:generate --name Transaction --attributes timeIn:date,typeId:integer,vehicleId:integer,slotId:integer,bookedBy:integer;\
+sequelize model:generate --name ArchivedTransaction --attributes regNum:string,typeId:integer,timeIn:date,timeOut:date,reason:string,charges:integer;\
+\
+
+\f3\b\fs24 copy contents from saved migration files and paste into respective created migration files.\
+
+\f1\b0\fs22 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \CocoaLigature1 Now, lets create DB tables from migration js using the command \cb10 sequelize db:migrate\cb1   \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf5 \CocoaLigature0 ashvinis-MacBook-Pro:parkingApp ashvinisharma$ sequelize db:migrate\
+\
+\ul Sequelize CLI [Node: 20.2.0, CLI: 6.6.1, ORM: 6.32.1]\ulnone \
+\
+Loaded configuration file "config/config.json".\
+Using environment "development".\
+== 20230709111956-create-user: migrating =======\
+== 20230709111956-create-user: migrated (0.061s)\
+\
+== 20230709114150-create-vehicle: migrating =======\
+== 20230709114150-create-vehicle: migrated (0.022s)\
+\
+== 20230709114200-create-slot: migrating =======\
+== 20230709114200-create-slot: migrated (0.018s)\
+\
+== 20230709114208-create-type: migrating =======\
+== 20230709114208-create-type: migrated (0.021s)\
+\
+== 20230709114236-create-transaction: migrating =======\
+== 20230709114236-create-transaction: migrated (0.020s)\
+\
+== 20230709114245-create-cancelled-transaction: migrating =======\
+== 20230709114245-create-cancelled-transaction: migrated (0.020s)\
+\
+\
+MariaDB [parkeaze]> show tables;\
++-----------------------+\
+| Tables_in_parkeaze    |\
++-----------------------+\
+| CancelledTransactions |\
+| SequelizeMeta         |\
+| Slots                 |\
+| Transactions          |\
+| Types                 |\
+| Users                 |\
+| Vehicles              |\
++-----------------------+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\b 7 rows in set (0.00 sec)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf5 \CocoaLigature0 MariaDB [parkeaze]> desc Vehicles;\
++-----------+--------------+------+-----+---------+----------------+\
+| Field     | Type         | Null | Key | Default | Extra          |\
++-----------+--------------+------+-----+---------+----------------+\
+| id        | int(11)      | NO   | PRI | NULL    | auto_increment |\
+| type      | varchar(255) | NO   |     | NULL    |                |\
+| number    | varchar(255) | NO   |     | NULL    |                |\
+| image     | \cb4 longtext\cb1      | YES  |     | NULL    |                |\
+| createdAt | datetime     | NO   |     | NULL    |                |\
+| updatedAt | datetime     | NO   |     | NULL    |                |\
++-----------+--------------+------+-----+---------+----------------+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\b 6 rows in set (0.01 sec)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0\fs24 \cf0 \CocoaLigature1 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Now that the tables are created, lets populate them with some data.\
+\
+Populate type then slots tables first. \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf5 \CocoaLigature0 MariaDB [parkeaze]> select * from types;\
++----+------+------------+---------------------+---------------------+\
+| id | name | chargeRate | createdAt           | updatedAt           |\
++----+------+------------+---------------------+---------------------+\
+|  1 | 2W   |         10 | 0000-00-00 00:00:00 | 0000-00-00 00:00:00 |\
+|  2 | 4W   |         20 | 0000-00-00 00:00:00 | 0000-00-00 00:00:00 |\
++----+------+------------+---------------------+---------------------+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf5 \CocoaLigature0 MariaDB [parkeaze]> select * from slots;\
++----+--------+--------+----------+--------+---------------------+---------------------+\
+| id | number | typeId | isActive | isFree | createdAt           | updatedAt           |\
++----+--------+--------+----------+--------+---------------------+---------------------+\
+|  1 |      1 |      1 |        1 |      1 | 2023-07-25 14:06:43 | 2023-07-26 17:59:18 |\
+|  2 |      2 |      1 |        1 |      1 | 2023-07-25 14:06:43 | 2023-07-26 18:00:12 |\
+|  3 |      3 |      1 |        1 |      1 | 2023-07-25 14:06:43 | 2023-07-25 14:06:43 |\
+|  4 |      4 |      2 |        1 |      0 | 2023-07-25 14:06:43 | 2023-08-19 11:08:42 |\
+|  5 |      5 |      2 |        1 |      1 | 2023-07-25 14:06:43 | 2023-08-19 09:58:39 |\
+|  6 |      6 |      2 |        1 |      1 | 2023-07-25 14:06:43 | 2023-08-13 08:05:58 |\
+|  7 |      7 |      2 |        1 |      1 | 2023-07-25 14:06:43 | 2023-07-26 18:01:01 |\
+|  8 |      8 |      2 |        0 |      0 | 2023-07-25 14:06:43 | 2023-07-25 14:06:43 |\
+|  9 |      9 |      1 |        0 |      0 | 0000-00-00 00:00:00 | 0000-00-00 00:00:00 |\
++----+--------+--------+----------+--------+---------------------+---------------------+
+\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+Use postman collection for rest of the tables \'85\cf11 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf11 1. create ADMIN user by inserting 1 user record of ADMIN type into DB. \
+2. Login using this ADMIN user\
+3. Being an ADMIN user.. create other regular users using postman\'92s 
+\f4\i\b User create
+\f1\i0\b0    api\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 For example.. \
+\
+code:102300\
+password:sunny@123\
+type:REGULAR\
+name:sunny sharma\
+isActive:true\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf0 {{\NeXTGraphic Pasted Graphic 1.png \width23500 \height9200 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf5 \CocoaLigature0 \
+\
+}
