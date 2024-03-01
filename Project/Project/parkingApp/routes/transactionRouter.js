@@ -4,7 +4,7 @@ const imgaeUploader = require('../middleware/imageUpload.js');
 const express = require('express');
 const router = express.Router();
 
-router.post('/', checkAuth.checkAuth, checkAuth.updateTokenLife, imgaeUploader.upload.single('image'), (req, res)=>{
+router.post('/book', checkAuth.checkAuth, checkAuth.updateTokenLife, imgaeUploader.upload.single('image'), (req, res)=>{
     txnController.book(req, res); 
 });
 router.get('/payment/:regNum', checkAuth.checkAuth, checkAuth.updateTokenLife, imgaeUploader.upload.single('image'), (req, res)=>{

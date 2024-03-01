@@ -10,15 +10,15 @@ const slotController = require('../controllers/slotController.js');
 const models = require('../models');
 
 function book(req, res){
-    if(req.file == null){
-        return res.status(400).json({
-            message: 'Vehicle image missing.'
-        });
-    }
+    // if(req.file == null){
+    //     return res.status(400).json({
+    //         message: 'Vehicle image missing.'
+    //     });
+    // }
     const vehicleObj = {
         typeId:req.body.typeId,
         regNum:req.body.regNum,
-        image:req.file.buffer.toString('base64')
+        // image:req.file.buffer.toString('base64')
     };
     const schema = {
         typeId:{type:"string", optional:false, numeric: true},

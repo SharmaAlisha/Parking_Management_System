@@ -110,6 +110,7 @@ function remove(regNum){
         }
     }).catch((err)=>{
         console.log('could not delete vehicle record.');
+        console.log(err)
     });
 }
 
