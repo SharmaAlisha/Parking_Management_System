@@ -10,6 +10,12 @@ Welcome to the Parking Management System! This web application helps manage park
 2. Assign Slot: Add a new vehicle and assign a parking slot.
 3. Slot avaibility: keep record of slots availble for parking.
 4. Calculate Cost: Check out a vehicle and calculate the parking fee based on the duration.
+# Demo
+![image](https://github.com/Saunakushwaha/Car_parking/assets/131192666/03b6a9ae-9607-40c3-a592-da9d39e12a97)
+![image](https://github.com/Saunakushwaha/Car_parking/assets/131192666/a8fce269-f7b6-4604-9e51-288b19477c7e)
+![image](https://github.com/Saunakushwaha/Car_parking/assets/131192666/bf0a5172-42aa-4647-a921-b890ba078fb6)
+![image](https://github.com/Saunakushwaha/Car_parking/assets/131192666/e2a0f26e-4434-430d-8114-54f03a248814)
+![image](https://github.com/Saunakushwaha/Car_parking/assets/131192666/bd8e3b1f-ae6e-4710-b049-2f03c643e0bc)
 # Tech Stack
 * **Frontend**: React.js with Bootstrap CSS framework
 * **Backend**: Node.js and Express.js
