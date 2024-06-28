@@ -23,6 +23,7 @@ function App() {
     <Route path="Admin" element={<AdminAfterLogin />} />
     <Route path="create" element={<Create />} />
     <Route path="deactive" element={<Deactive/>} />
+    
     {/* <Route path="earnings" element={<Earnings />} />
     <Route path="about" element={<About/>} /> */}
 

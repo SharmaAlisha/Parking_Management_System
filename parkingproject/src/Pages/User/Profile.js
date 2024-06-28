@@ -73,7 +73,7 @@ const Profile = () => {
                   id="phone"
                   class="form-control"
                   data-mdb-input-mask="+91 999-999-999"
-                  value="+91 7007623090"
+                  value="+91 xxx-xxx-xxxx"
                   disabled=""
                 />
               </div>
@@ -87,7 +87,7 @@ const Profile = () => {
                   rows="3"
                   disabled=""
                 >
-                  A-1/30 M.I.G Vishwa Bank Barra Kanpur
+                 XYZ India
                 </textarea>
               </div>
             </div>
